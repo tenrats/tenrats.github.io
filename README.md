@@ -1,2 +1,2 @@
-# tenrats.github.io
+# tenrats.in
 new testing
