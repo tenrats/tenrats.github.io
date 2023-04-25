@@ -43,16 +43,76 @@
 </style>
     <link rel="stylesheet" href="bidReuse.css">
      <script type="text/javascript" src="https://hbx.media.net/bidexchange.js?cid=8CU58AZWC&dn=webmd.com&version=4.1" async=""></script>
-    <script>
-      window.googletag = window.googletag || {cmd: []};
-      googletag.cmd.push(function() {
-        googletag.defineSlot('/45361917/8CUP1D6F0-219642383-HB', [[300, 250], [320, 100]], 'bidreuse').addService(googletag.pubads());
-        
-        
-        
+
+	  <script type="text/javascript">
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+    window.advBidxc = window.advBidxc || {};
+    window.advBidxc_requrl = "https://www.webmd.com/covid/coronavirus-incubation-period#1?mnet_test=1"
+    window.advBidxc.execute = window.advBidxc.execute || [];
+    window.advBidxc.timeout = 1e3;
+    window.advBidxc.customerId = "8CU66J63J";
+    window.advBidxc.domain = window.location.hostname;
+    window.advBidxc.version = 5.1;
+    window.advBidxc.ysec = 'general';
+    window.advBidxc.mchnm = '';
+    window.advBidxc.renderAd = function () {
+    };
+    window.advBidxc.startTime = new Date().getTime();
+    function loadScript(tagSrc) {
+        var scriptTag = document.createElement('script'),
+            placeTag = document.getElementsByTagName("script")[0];
+        scriptTag.type = 'text/javascript';
+        scriptTag.async = true;
+        scriptTag.src = tagSrc;
+        placeTag.parentNode.insertBefore(scriptTag, placeTag);
+    }
+
+    function loadGPT() {
+        if (!window.advBidxc.isAdServerLoaded) {
+            loadScript('https://www.googletagservices.com/tag/js/gpt.js');
+            window.advBidxc.isAdServerLoaded = true;
+        }
+    }
+
+    window.advBidxc.loadGPT = setTimeout(loadGPT, window.advBidxc.timeout);
+    var bidExEndpoint = 'https://hbx.media.net/bidexchange.js?cid=8CU66J63J&version=5.1&dn=www.webmd.com&itype=HB&wpmode=production&https=1&esi=1';
+    loadScript(bidExEndpoint);
+
+    // const articleAds = [];
+
+    var googletag = window.googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function () {
+
+//googletag.defineSlot('/45361917/8CUP1D6F0-219642383-HB', [[300, 250], [320, 100]], 'bidreuse').addService(googletag.pubads());
+
+        var articleAd2 = googletag.defineSlot('/45361917/8CUP1D6F0-219642383-HB', [[300, 250], [320, 100]], 'bidreuse')
+            .addService(googletag.pubads());
+            // articleAd2.setTargeting("pos", "137")
+        // var articleAd3 = googletag.defineSlot('/45361917/ytest/Display/Style/y402708', [[300, 250]], 'ssa-lrec-2')
+        //     .addService(googletag.pubads());
+        // var generalLrec1 = googletag.defineSlot('/45361917/ytest/Display/General/y402695', [[300, 600],[300,250]], 'Yahoo_multisize_test')
+        //     .addService(googletag.pubads());
+        // articleAds.push(articleAd2)
+        // articleAds.push(articleAd3);
+        // articleAds.push(generalLrec1)
         googletag.enableServices();
-      });
-    </script>
+        googletag.pubads().disableInitialLoad();
+        googletag.pubads().enableSingleRequest();
+        // googletag.pubads().setForceSafeFrame(true);
+        googletag.display('bidreuse');
+        // googletag.display('ssa-lrec-2');
+        // googletag.display('Yahoo_multisize_test');
+        googletag.pubads().refresh();
+    });
+
+
+
+
+
+</script>
 
     <!-- Enter gpt define slot here -->
 
