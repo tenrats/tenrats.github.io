@@ -14,8 +14,8 @@
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
-    // var googletag = googletag || {};
-    // googletag.cmd = googletag.cmd || [];
+     var googletag = googletag || {};
+     googletag.cmd = googletag.cmd || [];
 
     window.advBidxc = window.advBidxc || {};
     window.advBidxc_requrl = "https://www.webmd.com/covid/coronavirus-incubation-period#1?mnet_test=1"
@@ -36,6 +36,13 @@
         scriptTag.async = true;
         scriptTag.src = tagSrc;
         placeTag.parentNode.insertBefore(scriptTag, placeTag);
+    }
+
+    function loadGPT() {
+        if (!window.advBidxc.isAdServerLoaded) {
+            loadScript('https://www.googletagservices.com/tag/js/gpt.js');
+            window.advBidxc.isAdServerLoaded = true;
+        }
     }
 
     window.advBidxc.loadGPT = setTimeout(loadGPT, window.advBidxc.timeout);
