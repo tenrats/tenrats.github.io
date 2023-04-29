@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bid Reuse</title>
+<!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> -->
 <script>
+
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
     googletag.defineSlot('/45361917/rats-test-bidreuse', [[300, 600], [300, 250]], 'bidreuse').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
-</script>
-	  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bid Reuse</title>
+    // var googletag = googletag || {};
+    // googletag.cmd = googletag.cmd || [];
+
+    window.advBidxc = window.advBidxc || {};
+    window.advBidxc_requrl = "https://www.webmd.com/covid/coronavirus-incubation-period#1?mnet_test=1"
+    window.advBidxc.execute = window.advBidxc.execute || [];
+    window.advBidxc.timeout = 1000;
+    window.advBidxc.customerId = "8CUTD75IT";
+    window.advBidxc.domain = window.location.hostname;
+    window.advBidxc.version = 5.1;
+    window.advBidxc.ysec = 'general';
+    window.advBidxc.mchnm = '';
+    window.advBidxc.renderAd = function () {
+    };
+    window.advBidxc.startTime = new Date().getTime();
+    function loadScript(tagSrc) {
+        var scriptTag = document.createElement('script'),
+            placeTag = document.getElementsByTagName("script")[0];
+        scriptTag.type = 'text/javascript';
+        scriptTag.async = true;
+        scriptTag.src = tagSrc;
+        placeTag.parentNode.insertBefore(scriptTag, placeTag);
+    }
+
+    window.advBidxc.loadGPT = setTimeout(loadGPT, window.advBidxc.timeout);
+    var bidExEndpoint = 'https://hbx.media.net/bidexchange.js?cid=8CUTD75IT&version=5.1&dn=www.webmd.com&itype=HB&wpmode=production&https=1&esi=1';
+    loadScript(bidExEndpoint);
+	  </script>
+ 
 	  <style>
   body
 {
