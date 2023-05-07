@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bid Reuse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> -->
+<script>
+
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/45361917/rats-test-bidreuse', [[300, 600], [300, 250]], 'bidreuse').addService(googletag.pubads()
+    
+    )
+//.setTargeting('mnTest', '1')
+.setTargeting('testing', 'ratsQA')
+;   
+
+
+    googletag.defineSlot("/45361917/rats-test-bidreuse", [[300, 600], [300, 250]], "ngadslot").addService(googletag.pubads()).setTargeting("testing", "ratsQA");
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+     var googletag = googletag || {};
+     googletag.cmd = googletag.cmd || [];
+
+    window.advBidxc = window.advBidxc || {};
+    window.advBidxc_requrl = "https://www.webmd.com/covid/coronavirus-incubation-period#1?mnet_test=1"
+    window.advBidxc.execute = window.advBidxc.execute || [];
+    window.advBidxc.timeout = 5000;
+    window.advBidxc.customerId = "8CUTD75IT";
+    window.advBidxc.domain = "www.webmd.com";//window.location.hostname;
+    window.advBidxc.version = 5.1;
+    window.advBidxc.ysec = 'general';
+    window.advBidxc.mchnm = '';
+    window.advBidxc.renderAd = function () {
+    };
+    window.advBidxc.startTime = new Date().getTime();
+    function loadScript(tagSrc) {
+        var scriptTag = document.createElement('script'),
+            placeTag = document.getElementsByTagName("script")[0];
+        scriptTag.type = 'text/javascript';
+        scriptTag.async = true;
+        scriptTag.src = tagSrc;
+        placeTag.parentNode.insertBefore(scriptTag, placeTag);
+    }
+
+    function loadGPT() {
+        if (!window.advBidxc.isAdServerLoaded) {
+            loadScript('https://www.googletagservices.com/tag/js/gpt.js');
+            window.advBidxc.isAdServerLoaded = true;
+        }
+    }
+
+    window.advBidxc.loadGPT = setTimeout(loadGPT, window.advBidxc.timeout);
+    var bidExEndpoint = 'https://hbx.media.net/bidexchange.js?cid=8CUTD75IT&version=5.1&dn=www.webmd.com&asdfsdf';
+    loadScript(bidExEndpoint);
+	  </script>
+ 
+	  <style>
+  body
+{
+  background-color: #fcfcfc;
+}
+.bidReuse
+{
+  background-color: #ccc;
+  text-align: center;
+	  width:300px;
+		  height:600px;
+			  border-color:red;
+margin-left: 2rem;
+  
+}
+.heading{
+    text-align: center;
+}
+
+.text{
+    padding-top: 80px;
+  }
+
+.th{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 230px;
+    text-decoration: underline;
+  }
+</style>
+
+  </head>
+
+ 
+  <body>
+    <div class="heading ">
+      <h1>Bid Reuse Test Page</h1>
+    </div>
+    <hr>
+    <h2 style="margin-left: 2rem;">Bid Reuse Ad slot</h2>
+    <div class="bidReuse" id="bidreuse">
+        
+        <div class="container">
+            
+        <div class="row">
+            
+            <div class="col-lg">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('bidreuse'); });
+               </script>
+            </div>
+            <!-- /45361917/rats-test-bidreuse -->
+           
+             </div>
+            </div>
+</div>
+
+<div style="margin: 2rem 0;">
+<p>
+Lorem ipsum dolor sit amet. Ea eveniet 
+consequatur in culpa voluptas ea porro 
+nesciunt sed labore dignissimos? 
+Aut velit laboriosam aut vitae incidunt 
+quo nisi illum quo atque molestiae quo
+ facilis voluptatem. Et voluptatem 
+molestias eos voluptatum facilis in 
+nemo tempora et nobis maiores? 
+Est minima alias et inventore vero
+ ea placeat mollitia ut molestiae 
+ tenetur eos impedit fugiat id dolor 
+ commodi hic pariatur temporibus!
+
+ Lorem ipsum dolor sit amet. Ea eveniet 
+consequatur in culpa voluptas ea porro 
+nesciunt sed labore dignissimos? 
+Aut velit laboriosam aut vitae incidunt 
+quo nisi illum quo atque molestiae quo
+ facilis voluptatem. Et voluptatem 
+molestias eos voluptatum facilis in 
+nemo tempora et nobis maiores? 
+Est minima alias et inventore vero
+ ea placeat mollitia ut molestiae 
+ tenetur eos impedit fugiat id dolor 
+ commodi hic pariatur temporibus!
+
+
+ Lorem ipsum dolor sit amet. Ea eveniet 
+consequatur in culpa voluptas ea porro 
+nesciunt sed labore dignissimos? 
+Aut velit laboriosam aut vitae incidunt 
+quo nisi illum quo atque molestiae quo
+ facilis voluptatem. Et voluptatem 
+molestias eos voluptatum facilis in 
+nemo tempora et nobis maiores? 
+Est minima alias et inventore vero
+ ea placeat mollitia ut molestiae 
+ tenetur eos impedit fugiat id dolor 
+ commodi hic pariatur temporibus!
+
+
+
+ Lorem ipsum dolor sit amet. Ea eveniet 
+consequatur in culpa voluptas ea porro 
+nesciunt sed labore dignissimos? 
+Aut velit laboriosam aut vitae incidunt 
+quo nisi illum quo atque molestiae quo
+ facilis voluptatem. Et voluptatem 
+molestias eos voluptatum facilis in 
+nemo tempora et nobis maiores? 
+Est minima alias et inventore vero
+ ea placeat mollitia ut molestiae 
+ tenetur eos impedit fugiat id dolor 
+ commodi hic pariatur temporibus!
+
+
+ Lorem ipsum dolor sit amet. Ea eveniet 
+consequatur in culpa voluptas ea porro 
+nesciunt sed labore dignissimos? 
+Aut velit laboriosam aut vitae incidunt 
+quo nisi illum quo atque molestiae quo
+ facilis voluptatem. Et voluptatem 
+molestias eos voluptatum facilis in 
+nemo tempora et nobis maiores? 
+Est minima alias et inventore vero
+ ea placeat mollitia ut molestiae 
+ tenetur eos impedit fugiat id dolor 
+ commodi hic pariatur temporibus!
+
+ Lorem ipsum dolor sit amet. Ea eveniet 
+consequatur in culpa voluptas ea porro 
+nesciunt sed labore dignissimos? 
+Aut velit laboriosam aut vitae incidunt 
+quo nisi illum quo atque molestiae quo
+ facilis voluptatem. Et voluptatem 
+molestias eos voluptatum facilis in 
+nemo tempora et nobis maiores? 
+Est minima alias et inventore vero
+ ea placeat mollitia ut molestiae 
+ tenetur eos impedit fugiat id dolor 
+ commodi hic pariatur temporibus!
+
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non commodi laborum debitis quia rem autem vitae deserunt ratione. Laudantium ea aspernatur nesciunt, delectus laborum ipsa sit deserunt sed. Nisi?
+ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit numquam obcaecati doloremque provident, hic perferendis nisi cupiditate harum. Mollitia quidem ratione quasi totam facilis illum necessitatibus sequi et voluptatem quibusdam adipisci minus voluptas fugit quae earum, eos accusamus sapiente quo error ipsam, saepe hic? Officiis aliquid minima dignissimos, ratione eligendi voluptas tenetur eum est tempora dicta veritatis possimus perferendis ipsa dolores adipisci laborum culpa earum voluptatem. Eius provident nesciunt, ab dolore eligendi officiis excepturi consequuntur enim quam error pariatur quisquam, in vero quasi! Repellat consequuntur assumenda, facere natus deleniti earum quaerat nisi, sapiente autem illo expedita voluptas odio quas odit?
+ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque labore iusto quo voluptatem cum quaerat magnam repellendus quasi ut illum laboriosam amet ipsum nostrum repudiandae, veritatis tenetur a ipsam ipsa. Perferendis sapiente assumenda nisi rerum itaque ad iste, reprehenderit omnis natus molestias dignissimos nesciunt vitae enim hic saepe, dicta sed numquam atque! Provident maxime consequatur, voluptatibus sequi alias, a magnam sunt nulla, necessitatibus blanditiis ex temporibus earum explicabo doloribus laborum nobis quos eum at distinctio. Architecto, fugiat vitae! Eos magnam consectetur similique assumenda ut labore placeat, fugit ratione rerum praesentium dolore laudantium, natus est eius minima. Illo ex ullam reprehenderit.
+</p>
+
+</div>
+
+
+<h2 style="margin-left: 2rem;">NG Ad slot</h2>
+    <div class="bidReuse" id="ngadslot" style="margin-bottom: 4rem;">
+        
+        <div class="container">
+            
+        <div class="row">
+            
+            <div class="col-lg">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('ngadslot'); });
+               </script>
+            </div>
+            <!-- /45361917/rats-test-bidreuse -->
+           
+             </div>
+            </div>
+</div>
+
+  </body>
+</html>
