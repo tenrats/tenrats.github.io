@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bid Reuse</title>
+
+
+<style>
+  body
+{
+  background-color: #fcfcfc;
+}
+.bidReuse
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 250px;
+  background-color: #ccc;
+  border-radius: 3px;
+  text-align: center;
+  
+}
+.heading{
+    text-align: center;
+}
+
+.text{
+    padding-top: 80px;
+  }
+
+.th{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 230px;
+    text-decoration: underline;
+  }
+</style>
+
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Bid Reuse Test Page</h1>
+    </div>
+    <hr>
+    <h2 class="th">Bid Reuse Ad slot</h2>
+    <div class="bidReuse" id="bidreuse" style='min-width: 300px; min-height: 250px;'>
+            <!-- /45361917/rats-test-bidreuse -->
+             <script>
+                  googletag.cmd.push(function() { googletag.display('bidreuse'); });
+             </script>
+</div>
+    </div>
+  </body>
+</html>
