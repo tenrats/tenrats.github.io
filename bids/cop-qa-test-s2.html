@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bid Reuse</title>
+
+<style>
+  body
+{
+  background-color: #fcfcfc;
+}
+.bidReuse
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 250px;
+  background-color: #ccc;
+  border-radius: 3px;
+  text-align: center;
+  
+}
+.heading{
+    text-align: center;
+}
+
+.text{
+    padding-top: 80px;
+  }
+
+.th{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 230px;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+
+
+    // GAM / gpt config below.
+  
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+      
+      //configarable lines
+      googletag.defineSlot('/45361917/COP-QA-Test-Video-byRats', [728, 90], 'div-gpt-ad-1701942495047-0').addService(googletag.pubads()).setTargeting('rats', 'testQA');   
+
+    //   googletag.defineSlot('/45361917/rats-test-bidreuse', [[300, 600], [300, 250]], 'bidreuse').addService(googletag.pubads()).setTargeting('rats', 'testQA');   
+      
+      //leave it to default
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+       var googletag = googletag || {};
+       googletag.cmd = googletag.cmd || [];
+  
+  
+  
+      function loadGPT() {
+          if (!window.advBidxc.isAdServerLoaded) {
+              loadScript('https://www.googletagservices.com/tag/js/gpt.js');
+              window.advBidxc.isAdServerLoaded = true;
+          }
+      }
+  
+      //mnet bidexchange config below.
+  
+      window.advBidxc = window.advBidxc || {};
+  
+      window.advBidxc_requrl = "https://www.webmd.com/covid/coronavirus-incubation-period#1?mnet_test=1"
+      window.advBidxc.customerId = "8CUTD75IT";
+      window.advBidxc.domain = "www.webmd.com";//window.location.hostname;
+  
+  
+      window.advBidxc.execute = window.advBidxc.execute || [];
+      window.advBidxc.timeout = 1000;
+      window.advBidxc.version = 5.1;
+      window.advBidxc.renderAd = function () {
+      };
+  
+      window.advBidxc.startTime = new Date().getTime();
+      function loadScript(tagSrc) {
+          var scriptTag = document.createElement('script'),
+              placeTag = document.getElementsByTagName("script")[0];
+          scriptTag.type = 'text/javascript';
+          scriptTag.async = true;
+          scriptTag.src = tagSrc;
+          placeTag.parentNode.insertBefore(scriptTag, placeTag);
+      }
+  
+      window.advBidxc.loadGPT = setTimeout(loadGPT, window.advBidxc.timeout);
+      var bidExEndpoint = 'https://hbx.media.net/bidexchange.js?cid=8CUTD75IT&version=5.1&dn=www.webmd.com';
+      loadScript(bidExEndpoint);
+  </script>
+   
+
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Bid Reuse Test Page</h1>
+    </div>
+    <hr>
+    <h2 class="th">COP QA Testing</h2>
+
+<!-- /45361917/COP-QA-Test-Video-byRats -->
+    <div id='div-gpt-ad-1701942495047-0' style='width: 728px; height: 90px;'>
+        <script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1701942495047-0'); });
+        </script>
+    </div>
+
+    </div>
+  </body>
+</html>
