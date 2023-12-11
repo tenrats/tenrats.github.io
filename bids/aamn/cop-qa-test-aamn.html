@@ -15,11 +15,12 @@
 
             googletag.cmd.push(function() {
                 googletag.defineSlot('/45361917/COP-QA-Test-Video-byRats', [300,250], 'Slot300_250')
-                    .setTargeting('rats', 'testQA')
+                    //.setTargeting('rats', 'testQA')
                     .addService(googletag.pubads()),
                 googletag.defineSlot('/45361917/COP-QA-Test-Video-byRats', [300,600], 'Slot300_600')
-                    .setTargeting('rats', 'testQA')
+                    //.setTargeting('rats', 'testQA')
                     .addService(googletag.pubads()),
+                googletag.pubads().setTargeting('rats', 'testQA')
                 googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
@@ -68,7 +69,7 @@
     </head>
     <body>
         <div id="Container" >
-            <h1>Cop QA Test Page</h1>
+            <h1>COP QA Test Page</h1>
             <div id = "Slot300_250" style = " margin-left:1rem; width: 300px; height: 250px;"></div>
             <script>
                 googletag.cmd.push(function() {
@@ -76,7 +77,7 @@
                 });
             </script>
             <hr>
-                <h1>Cop QA Test Page for 300 600 slot</h1>
+                <h1>COP QA Test Page for 300 600 slot</h1>
                 <div id = "Slot300_600" class="slots" style = " margin-left:1rem; width: 300px; height: 600px;"></div>
                 <script>
                     googletag.cmd.push(function() {
