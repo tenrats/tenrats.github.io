@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            window.googletag = window.googletag || {cmd:[]};
+
+            googletag.cmd.push(function() {
+                googletag.defineSlot('/45361917/COP-QA-Test-Video-byRats', [728, 90], 'changeLoc')
+                    .setTargeting('rats', 'testQA')
+                    .addService(googletag.pubads()),
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+
+            var googletag = window.googletag ||{cmd:[]};
+
+            var stdGPT = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+            function loadGPT() {
+                if (!window.advBidxc.isAdServerLoaded) {
+                    loadScript(stdGPT);
+                    window.advBidxc.isAdServerLoaded = true;
+                }
+            }
+
+              
+                //mnet bidexchange config below.
+            
+            window.advBidxc = window.advBidxc || {};
+            
+            window.advBidxc_requrl = "https://www.webmd.com/covid/coronavirus-incubation-period#1?mnet_test=1"
+            window.advBidxc.customerId = "8CUTD75IT";
+            window.advBidxc.domain = "www.webmd.com";//window.location.hostname;
+
+
+            window.advBidxc.execute = window.advBidxc.execute || [];
+            window.advBidxc.timeout = 1000;
+            window.advBidxc.version = 5.1;
+            window.advBidxc.renderAd = function () {
+            };
+
+            window.advBidxc.startTime = new Date().getTime();
+            function loadScript(tagSrc) {
+                var scriptTag = document.createElement('script'),
+                    placeTag = document.getElementsByTagName("script")[0];
+                scriptTag.type = 'text/javascript';
+                scriptTag.async = true;
+                scriptTag.src = tagSrc;
+                placeTag.parentNode.insertBefore(scriptTag, placeTag);
+            }
+
+            window.advBidxc.loadGPT = setTimeout(loadGPT, window.advBidxc.timeout);
+            var bidExEndpoint = 'https://hbx.media.net/bidexchange.js?cid=8CUTD75IT&version=5.1&dn=www.webmd.com';
+            loadScript(bidExEndpoint);
+        </script>
+        <title>Cop QA Test Page</title>
+    </head>
+    <body>
+        <div id="Container">
+            <h1>COP QA Test Page</h1>
+            <div id = "changeLoc" style = " margin-left:1rem; width: 728px; height: 90px; background-color: #ccc;"></div>
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display('changeLoc');
+                });
+            </script>
+        </div>
+    </body>
+</html>
